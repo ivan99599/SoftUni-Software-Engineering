@@ -10,5 +10,7 @@ for number in range(n):
     else:
         negative.append(current_number)
 
+print(positive)
+print(negative)
 print(f"Count of positives: {count_positives}")
 print(f"Sum of negatives: {sum(negative)}")
