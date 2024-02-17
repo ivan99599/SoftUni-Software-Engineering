@@ -1,23 +1,15 @@
-def orders(current_product, current_quantity, result):
-    if current_product == "coffee":
-        result = current_quantity * coffee
-        return f"{result:.2f}"
-    elif current_product == "water":
-        result =  current_quantity * water
-        return f"{result:.2f}"
-    elif current_product == "coke":
-        result = current_quantity * coke
-        return f"{result:.2f}"
-    elif current_product == "snacks":
-        result =  current_quantity * snacks
-        return f"{result:.2f}"
+def order(products, quantity):
+    if product == "coffee":
+        return 1.50 * quantity
+    if product == "coke":
+        return 1.40 * quantity
+    if product == "water":
+        return 1 * quantity
+    if product == "snacks":
+        return 2 * quantity
 
 
 product = input()
 quantity = int(input())
-result = 0
-coffee = 1.50
-water = 1.00
-coke = 1.40
-snacks = 2.00
-print(orders(product, quantity, result))
+result = order(product, quantity)
+print(f"{result:.2f}")
